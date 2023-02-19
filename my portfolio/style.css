@@ -27,7 +27,7 @@ body{
 }
 .sidebar ul a{
     display: block;
-    height: 10%;
+    height: 13%;
     width: 100%;
     line-height: 65px;
     font-size: 20px;
@@ -141,14 +141,14 @@ margin-left: 30px;
     /*justify-content: center;*/
     width: 100%;
     border: 1px solid #ccc;
-    height: 45%;
+    height: 50%;
     font-family: 'Roboto',sans-serif;
     
 }
 
 .aboutme{
     font-size: 20px;
-    padding: 50px 25px;
+    padding:25px;
     background-color: white; 
     margin-left: 70px;
     margin-right: 70px;
@@ -167,7 +167,7 @@ margin-left: 30px;
     /*align-items: center;
     justify-content: center;*/
     border: 1px solid #ccc;
-    height: 80%;
+    height: 100%;
     font-family: 'Roboto',sans-serif;
 }
 
@@ -244,7 +244,7 @@ margin-left: 30px;
     /*align-items: center;
     justify-content: center;*/
     border: 1px solid #ccc;
-    height: 70%;
+    height: 100%;
     /*background: #f1f1f1;*/
   }
   .container5{
@@ -255,7 +255,7 @@ margin-left: 30px;
     /*align-items: center;
     justify-content: center;*/
     border: 1px solid #ccc;
-    height: 50%;
+    height: 55%;
     /*background: #f1f1f1;*/
   }
   #a{
@@ -265,7 +265,7 @@ margin-left: 30px;
     font-size: 20px;
     font-weight: 100;
     color: black;
-    background-color: #ddd;
+    background-color: #fff;
     margin-bottom: 2cm;
     border: 2px solid black;
   }
@@ -363,3 +363,131 @@ margin-left: 30px;
     color: #ddd;
     margin: 20px 20px 200px 500px;
 }
+@media screen and (max-width:480px) {
+    .sidebar{
+        display:none;
+    }
+    .container1 {
+        display:inline;
+        /*align-items: center; 
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;*/
+        height: 100%;
+        margin-bottom:50px;
+    }
+    .image
+    {
+        display: inline;
+    }
+    .container2
+    {
+        display: inline;
+    }
+    .container3{
+        display:inline;
+    }
+    .container5{
+        display: inline;
+    }
+    .container6{
+        display: inline;
+    }
+    .container7
+    {
+        display: inline;
+    }
+    .container8
+    {
+        display: inline;
+    }
+    .heading
+    {
+        margin-left: 10px;
+    }
+    .skill{
+      margin-left: -280px;
+    }
+    .skill-bar
+    {
+        width:300px;
+    }
+    .skill-name{
+        color:#fff;
+    }
+    .img{
+        width:50px;
+        height:50px
+    }
+    .contact{
+        margin-left: 5px;
+        width:300px;
+        margin-bottom: -70px;
+        margin-top: -50px;
+    }
+    .contact ul {
+        margin-left: 1px;
+    }
+    .contact li a {
+        padding: 10px;
+      }
+      .sk{
+        margin-bottom: -70px;
+      }
+      #map
+      {
+        margin-left:30px ;
+        width:300px;
+        height:300px;
+        margin-top: 20px;
+      }
+      #a
+      {
+        margin-left: 35px;
+        width:250px;
+        height:300px;
+        margin-top: -10px;
+        margin-bottom: -70px;
+      }
+      .timeline-area
+      {
+        margin-left: 20px;
+        margin-bottom: -50px;
+      }
+      .container4
+      {
+        width:200px;
+      }
+      .clg
+      {
+        height:175px;
+      }
+      .aboutme{
+        margin-left: 20px;
+        width:250px;
+        margin-bottom: -50px;
+      }
+      .hname{
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+      .place{
+        margin-left: 20px;
+        margin-bottom: -50px;
+      }
+      .image{
+        margin-left: -468px;
+        margin-bottom: -250px;
+        margin-top: 55px;
+      }
+      footer
+      {
+        color: whitesmoke;
+        margin-top: 20px;
+      }
+
+
+   
+    
+    
+}
+    
