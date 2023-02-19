@@ -1,0 +1,178 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Side menu bar css</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css">
+        <script src="https://www.flaticon.com/free-icons/instagram" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/4350a450b6.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            body  {
+              background-image: url("checks.png");
+              background-size: cover;
+              background-repeat: repeat;
+              background-attachment: scroll;
+            }
+            </style>
+
+    </head>
+    <body>
+        
+        
+        <div class="container1">
+          <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house">&nbsp;&nbsp;HOME</i></a></li>
+                <li><a href="#aboutme"><i class="fa-solid fa-circle-info">&nbsp;&nbsp;ABOUT</i></a></li>
+                <li><a href="#education"><i class="fa-solid fa-book-open-reader">&nbsp;&nbsp;EDUCATION</i></a></li>
+                <li><a href="#ach"><i class="fa-solid fa-star">&nbsp;&nbsp;ACHIEVEMENTS</i></a></li>
+                <li><a href="#skills"><i class="fa-solid fa-gear">&nbsp;&nbsp;SKILLS</i></a></li>
+                <li><a href="#contact"><i class="fa-solid fa-address-book">&nbsp;&nbsp;CONTACT</i></a></li>
+                <li><a href="#add"><i class="fa-solid fa-location-dot">&nbsp;&nbsp;ADDRESS</ADDRESS></i></a></li>
+            </ul>
+        </div>
+            
+            <div class="l1">
+              <img src="image.jpg" class="image">
+            </div>
+            <div class="text">
+              <h2 class="hname">HAVEELA KAVALA</h2>
+              <p class="place">Sophomore at IIITDM Kancheepuram</p>
+            </div>
+        </div>
+        <div class="container2">
+            <h2 class="heading" id="aboutme">ABOUT ME</h2>
+          
+              <p class="aboutme"> hey there! <br>I am Haveela Kavala from Andhra Pradesh.I am currently
+                   a computer science engineering undergraduate student at Indian Institute
+                   of information technology design and manufacturing
+                   Kancheepuram.I am always curious about things and enjoy
+                   learning.My Hobbies are playing shuttle, having a passion for music .
+              </p>
+        </div>
+        <div class="container3">
+          <h2 class="heading" id="education">EDUCATION</h2>
+          <section class="timeline-area">
+            <div class="container4">
+              <h2>Universal High School</h2>
+              <h3>2009-2019</h3>
+            </div>
+            <div class="container4">
+              <h2>Narayana Junior college</h2>
+              <h3>2019-2021</h3>
+            </div>
+            <div class="container4">
+              <h2>IIITDM KANCHEEPURAM</h2>
+              <h3>2021-PRESENT</h3>
+            </div>
+          </section>
+        </div>
+        <div class="container5">
+          <h2 class="heading" id="ach">ACHIEVEMENTS</h2>
+          <p>
+            <ul class="ul" id="a">
+              <li ><i class="fa-solid fa-trophy">&nbsp;&nbsp;&nbsp;&nbsp;</i>got 4rth rank at a talent test conducted by my school</li>
+              <br><br>
+              <li ><i class="fa-solid fa-medal">&nbsp;&nbsp;&nbsp;&nbsp;</i>secured gold medal in joy of computing using python in NPTEL COURSE</li>
+            </ul>
+          </p>
+        </div>
+        <div class="container6">
+          <div class="heading" id="skills">SKILLS</div>
+          
+          <div class="skills">
+            <div class="skill">
+              <div class="skill-name">C</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">C++</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">PYTHON</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="80"></div>
+              </div>
+            </div>
+
+
+            <div class="skill">
+              <div class="skill-name">HTML</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="90"></div>
+              </div>
+            </div>
+      
+            <div class="skill">
+              <div class="skill-name">CSS</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="70"></div>
+              </div>
+            </div>
+      
+            <div class="skill">
+              <div class="skill-name">Javascript</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="60"></div>
+              </div>
+            </div>
+         </div>
+
+      
+          <script>
+            $('.skill-per').each(function(){
+              var $this = $(this);
+              var per = $this.attr('per');
+              $this.css("width",per+'%');
+              $({animatedValue: 0}).animate({animatedValue: per},{
+                duration: 1000,
+                step: function(){
+                  $this.attr('per', Math.floor(this.animatedValue) + '%');
+                },
+                complete: function(){
+                  $this.attr('per', Math.floor(this.animatedValue) + '%');
+                }
+              });
+            });
+          </script>
+
+
+          
+        </div>
+        <div class="container7">
+          <div class="heading" id="contact" >CONTACT</div>
+          <div class="contact">
+            <ul>
+                <li><a href="https://www.instagram.com/haveelakavala/" class="icon"><img src="images/instagram.png" alt="insta" width="100" height="100"></a></li>
+                <li><a href="https://www.linkedin.com/in/kavala-haveela-61b71225b/" class="icon"><img src="images/linkedin.png" alt="insta" width="100" height="100"></a></li>
+                <li><a href="mail to: kavalahaveela@gmail.com" class="icon"><img src="images/mail.png" alt="insta" width="100" height="100"></a></li>
+                <li><a href="#" class="icon"><img src="images/github.png" alt="insta" width="100" height="100"></a></li>
+            </ul>
+          </div>
+        </div>
+      <div class="container8">
+        <h2 class="heading" id="add">ADDRESS</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.5531781034947!2d80.18954501453584!3d15.827497289030628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a5be36cdfad23%3A0x692e47c754d28b60!2sEbenezer%20Building!5e0!3m2!1sen!2sin!4v1676717556659!5m2!1sen!2sin" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+
+      </div>
+      <div class="footer">
+        <span class="copyright_text"><footer> © 2023 Haveela Kavala&nbsp;&nbsp;All rights reserved</footer></span></div>
+      </body>
+</html>
