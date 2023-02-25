@@ -37,7 +37,7 @@
                 <li><a href="#"><i class="fa-solid fa-house">&nbsp;&nbsp;HOME</i></a></li>
                 <li><a href="#aboutme"><i class="fa-solid fa-circle-info">&nbsp;&nbsp;ABOUT</i></a></li>
                 <li><a href="#education"><i class="fa-solid fa-book-open-reader">&nbsp;&nbsp;EDUCATION</i></a></li>
-                <li><a href="#skills"><i class="fa-solid fa-gear">&nbsp;&nbsp;SKILLS</i></a></li>
+                <li><a href="#skills" id="skills1"><i class="fa-solid fa-gear">&nbsp;&nbsp;SKILLS</i></a></li>
                 <li><a href="#contact"><i class="fa-solid fa-address-book">&nbsp;&nbsp;CONTACT</i></a></li>
                 <li><a href="#add"><i class="fa-solid fa-location-dot">&nbsp;&nbsp;ADDRESS</ADDRESS></i></a></li>
             </ul>
@@ -123,6 +123,15 @@
                 <div class="skill-per" per="60"></div>
               </div>
             </div>
+            <script>
+              const listen = document.getElementById('skills1');
+              listen.addEventListener('click', () => {
+            setTimeout(() => {
+             location.reload();
+           }, 50);
+   
+             });
+            </script>
          </div>
 
       
@@ -165,4 +174,4 @@
       <div class="footer">
         <span class="copyright_text"><footer> © 2023 Haveela Kavala&nbsp;&nbsp;All rights reserved</footer></span></div>
       </body>
-</html
+</html>
