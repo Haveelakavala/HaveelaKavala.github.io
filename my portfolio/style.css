@@ -11,7 +11,7 @@ body{
 .sidebar{
     position: fixed;
     left: 0px;
-    width: 300px;
+    width: 250px;
     height: 100%;
     background: #042331;
     transition: all .5s ease;
@@ -26,18 +26,35 @@ body{
     height: 10%;
 }
 .sidebar ul a{
+    text-align: bottom;
     display: block;
     height: 13%;
     width: 100%;
     line-height: 65px;
     font-size: 20px;
     color: white;
-    padding-top: 25px;
+    padding-top: 40px;
     padding-left: 30px;
     box-sizing: border-box;
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid black;
     transition: .4s;
+}
+.sidebar ul li a:hover{
+  text-align: bottom;
+  display: block;
+  height: 13%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-top: 40px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+  background-color: #063146;
 }
 .contact ul{
     display: flex;
@@ -49,44 +66,8 @@ body{
 #check{
     display: none;
 }
-label #btn,label #cancel{
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    background: rgb(39, 58, 117);
-    border-radius: 3px;
-}
-label #btn{
-    position: fixed;
-    left: 40px;
-    top: 25px;
-    font-size: 35px;
-    color: white;
-    padding: 6px 12px;
-    transition: all .5s;
-}
-label #cancel{
-    position: fixed;
-    z-index: 1111;
-    left: -195px;
-    top: 17px;
-    font-size: 30px;
-    color: white;
-    padding: 4px 9px;
-    transition: all .5s ease;
-}
-#check:checked ~ .sidebar{
-    left: 0px;
-}
-#check:checked ~ label #btn{
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
-}
-#check:checked ~ label #cancel{
-    left: 195px;
-    
-}
+
+
 .sidebar ul li a {
     letter-spacing: 2.5px;
 }
@@ -340,6 +321,8 @@ margin-left: 30px;
     padding-top: 0px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 30;
+    margin-top: 90px;
 }
 .contact li a {
     display: block;
@@ -362,6 +345,146 @@ margin-left: 30px;
     display: block;
     color: #ddd;
     margin: 20px 20px 200px 500px;
+}
+@media screen and (max-width:850px) {
+  
+  .sidebar{
+    display:none;
+  }
+   .container1 {
+    display:inline;
+    /*align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;*/
+    height: 100%;
+    margin-bottom:50px;
+  }
+    .image
+    {
+      margin-left: 100px;
+    }
+    .container2
+    {
+        display: inline;
+    }
+    .container3{
+        display:inline;
+    }
+    .container5{
+        display: inline;
+    }
+    .container6{
+        display: inline;
+    }
+    .container7
+    {
+        display: inline;
+    }
+    .container8
+    {
+        display: inline;
+    }
+    .heading
+    {
+        margin-left: 10px;
+    }
+    .skill{
+      margin-left: -280px;
+    }
+    .skill-bar
+    {
+        width:300px;
+    }
+    .skill-name{
+        color:#fff;
+    }
+    .img{
+        width:50px;
+        height:50px
+    }
+    .contact{
+        margin-left: 50px;
+        width:600px;
+        margin-bottom: -70px;
+        margin-top: -50px;
+    }
+    .contact ul {
+        margin-left: 1px;
+        height: 140px;
+    }
+    .contact li a {
+        padding: 35px;
+      }
+      .sk{
+        margin-bottom: -70px;
+      }
+      #map
+      {
+        margin-left:250px ;
+        width:300px;
+        height:300px;
+        margin-top: 20px;
+      }
+      #a
+      {
+        margin-left: 35px;
+        width:250px;
+        height:300px;
+        margin-top: -10px;
+        margin-bottom: -70px;
+      }
+      .timeline-area
+      {
+        margin-left: 60px;
+        margin-bottom: -50px;
+      }
+      .skills{
+        margin-left: 60px;
+      }
+      .skill-bar{
+        width: 600px;
+      }
+      .container4
+      {
+        width:500px;
+      }
+      .clg
+      {
+        height:175px;
+      }
+      .aboutme{
+        margin-left: 20px;
+        width:700px;
+        margin-bottom: -50px;
+      }
+      .hname{
+        margin-left: 170px;
+        margin-bottom: 10px;
+      }
+      .place{
+        margin-left: 20px;
+        margin-bottom: -50px;
+      }
+      .image{
+        margin-left: -280px;
+        margin-bottom: -250px;
+        margin-top: 55px;
+      }
+      footer
+      {
+        margin-left: -450px;
+        color: whitesmoke;
+        margin-top: 20px;
+      }
+      .icon{
+        max-width: 70px;
+        max-height: 70px;
+      }
+
+
+   
+    
+    
 }
 @media screen and (max-width:480px) {
     .sidebar{
@@ -490,8 +613,8 @@ margin-left: 30px;
         max-height: 50px;
       }
 
+
    
     
     
 }
-    
