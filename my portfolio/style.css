@@ -63,9 +63,7 @@ body{
 .sidebar ul a i{
     margin-right: 16px;
 } 
-#check{
-    display: none;
-}
+
 
 
 .sidebar ul li a {
@@ -209,13 +207,7 @@ margin-left: 30px;
     margin: 0;
     font-family: poppins;
 }
-#ach{
-    padding-bottom: 2cm;
-}
-#a{
-    margin-top: 2cm;
-    margin-left: 70px;
-}
+
 .container6{
     margin: 0;
     padding: 0;
@@ -228,28 +220,8 @@ margin-left: 30px;
     height: 100%;
     /*background: #f1f1f1;*/
   }
-  .container5{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans',sans-serif;
-    display: flex;
-    /*align-items: center;
-    justify-content: center;*/
-    border: 1px solid #ccc;
-    height: 55%;
-    /*background: #f1f1f1;*/
-  }
-  #a{
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    font-weight: 100;
-    color: black;
-    background-color: #fff;
-    margin-bottom: 2cm;
-    border: 2px solid black;
-  }
+ 
+ 
   .skills{
     width: 100%;
     max-width: 600px;
@@ -267,6 +239,7 @@ margin-left: 30px;
     height: 20px;
     background: #cacaca;
     border-radius: 8px;
+    width: 400px;
   }
   
   .skill-per{
